@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block title %}Formulario de Inscripción{% endblock %}
+
+{% block content %}
+<body>
+<nav>
+    <h3 class="crud">CRUD</h3>
+    <a href="{{ url_for('admin') }}"><h3 class="admin">DEV</h3></a>
+</nav>
+
+<header class="contenedor_hero">
+    <h1 class="titulo">La oportunidad que estabas esperando</h1>
+    <p class="slogan">Capacitate ahora y hace crecer tu negocio, con nuestras capacitaciones al alcance de todos y totalmente gratis</p>
+    </header>
+    <section>
+    <h3 class="subtitulo">Aprende <span class="span1">Marketing Digital</span></h3>
+    <p>Seran cuatro jornadas intensivas del <span class="span2">19 al 22 de diciembre</span> donde aprenderas sobre:</p>
+    </section>
+    <section contenedor_temas>
+    <ul>
+        <li>El Negocio Digital</li>
+        <li>Gatillos Mentales</li>
+        <li>Guiones de Ventas</li>
+        <li>Cierres de Ventas</li>
+    </ul>
+    </section>
+    <section class="contenedor_form">
+    <h2 class="contacto">¡INCRIBETE AHORA!</h2>
+
+    <form action="/aniadir_contacto" method="POST" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" require>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" require>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" require>
+
+        <input type="submit" value="INSCRIBIRME">
+    </form>
+
+    <h2 class="final">¡NOS VEMOS ADENTRO!</h2>
+    </section>
+</body>
+{% endblock %}

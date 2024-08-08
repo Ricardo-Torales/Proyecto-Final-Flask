@@ -1,0 +1,263 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedorTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contenedorTitulo h1 {
+  background-color: rgb(9, 83, 58);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+
+}
+
+.contenedorTitulo h2{
+  font-weight: 800;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.contenedorTitulo p {
+  font-size: 1.5rem;
+ text-align: center;
+ padding: 2rem;
+}
+
+.contenedorTitulo img {
+  width: 25vw;
+
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tituloIntro{
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(250, 24, 24)
+
+}
+
+a .btnIntro{
+  width: 35%;
+  background-color: #FFA500;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.contenedorTercera{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 4rem;
+}
+
+.aprender{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.imgAprender{
+  width: 30%;
+}
+
+.contenedorAprender{
+  width: 40%;
+  justify-content: center;
+}
+
+.listaAprender{
+  list-style: check;
+}
+
+h2.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3.subtitulo {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+p.parrafo {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contenedorBeneficios{
+  padding: 6rem;
+
+}
+
+.beneficios{
+  color: rgb(56, 194, 56);
+  font-weight: 800;
+
+}
+
+.listaBeneficios{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  margin-top: 4rem;
+  list-style: check;
+}
+
+
+.preguntasFrecuentes{
+  margin: 3rem;
+}
+
+.tituloPF{
+
+}
+.listaPreguntas{
+  list-style: none;
+}
+.contenedorLlamado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.llamado{
+  color: #ff0000;
+  font-weight: 800;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tituloLlamado{
+  padding: 2rem;
+}
+
+.llamadospan1{
+  color:#000000
+}
+
+.llamadospan2{
+  color: #00ff3c;
+}
+
+
+.imgMedios{
+  padding-top: 2rem;
+  max-width: 90%;
+}
+
+
+button[type="submit"] {
+  background-color: #FFA500; /* Color naranja */
+  color: #fff; /* Color de texto blanco */
+  padding: 10px 20px; /* Relleno interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: transform 0.2s; /* Transición de transformación para el hover */
+}
+
+
+button[type="submit"]:hover {
+  transform: scale(1.10); /* Agranda el botón al 105% del tamaño original en hover */
+}
+
+.btnW {
+  position: fixed; /* Lo fija en la pantalla */
+  bottom: 5%; /* Distancia desde la parte inferior en porcentaje */
+  right: 5%; /* Distancia desde la derecha en porcentaje */
+  background-color: #6ed540;/* background-color: #6ed540; */
+  padding: 5px;
+  border-radius: 50%; /* Para hacerlo circular */
+  transition: transform 0.2s; /* Agrega una transición de transformación */
+  z-index: 1;
+  color: #fff;
+}
+
+.btnW:hover {
+  transform: scale(1.1); /* Agranda el botón al 110% del tamaño original */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+
+
+
+
+.footer{
+  background-color: #222222;
+  color: #ffffff;
+  margin-top: 5rem;
+  padding: 3rem 5rem;
+  z-index: 5;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.accceso_admin{
+  color: #490009;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+/* @media (max-width: 950px) { 
+  section.tarjetas {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 5rem;
+  }
+
+  article.tarjeta {
+    width: 100%;
+  }
+} */
+
+
+@media screen and (max-width: 768px) {
+  .imgAprender {
+      display: none;
+  }
+  .contenedorAprender{
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .btnW {
+    font-size: 14px; /* Reduce el tamaño del botón en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,244 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fondo general de la página */
+}
+
+nav{
+    background: #004643;
+    color:#ffffff;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.crud{
+    /* border: #f4f4f4 2px solid; */
+    border-radius: 20px;
+    width: 7%;
+    margin-right: 0.5rem;
+    padding: 5px;
+}
+.admin{
+    border: #f4f4f4 1px solid;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 5px;
+
+}
+
+.admin:hover{
+    color: #004643;
+    background: #f4f4f4;
+    transform: scale(1.05);
+}
+
+
+.contenedor_hero {
+    background-color: #004643; /* Fondo del header */
+    color: #ffffff; /* Color del texto del header */
+    padding: 40px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo de las secciones */
+    border: 1px solid #004643; /* Borde de las secciones */
+    border-radius: 10px;
+}
+.subtitulo{
+    margin: 1rem 0;
+}
+
+span.span1 {
+    color: #004643; /* Color del primer span */
+}
+
+span.span2 {
+    color: #004643; /* Color del segundo span */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+li:hover{
+    transform: scale(1.2);
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo del formulario */
+    border: 1px solid #004643; /* Borde del formulario */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #004643; /* Borde de los campos de entrada y botón */
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #004643; /* Color del botón */
+    color: #ffffff; /* Color del texto del botón */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #002d29; /* Cambio de color al pasar el ratón sobre el botón */
+}
+
+.contacto {
+    color: #004643; /* Color del texto de la sección de contacto */
+    margin-bottom: 20px;
+}
+.campo-invalido {
+    border: 1px solid red;
+}
+
+
+
+.final {
+    color: #004643; /* Color del texto de la sección final */
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* estilos Página Administrador */
+input[type="text"],
+input[type="contra"],
+input[type="submit2"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #004643; /* Borde de los campos de entrada y botón */
+    border-radius: 5px;
+}
+
+input[type="submit2"] {
+    background-color: #004643; /* Color del botón */
+    color: #ffffff; /* Color del texto del botón */
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="submit2"]:hover {
+    background-color: #002d29; /* Cambio de color al pasar el ratón sobre el botón */
+}
+
+.error{
+    color: #ff0000;
+}
+
+
+/* Estilos pagina contactos */
+.tabla{
+    align-items: center;
+    justify-content: center;
+}
+table{
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .tabla{
+    align-items: center;
+    justify-content: center;
+}
+    table { 
+        font-size: 70%;
+    }
+    .Edb{
+        margin: 0;
+        font-size: 90%;
+    }
+}
+
+.Edb{
+    background-color: #002d29;
+    color: #f4f4f4;
+    margin: 0.2rem auto;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 2px 2px #002d29;
+    cursor: pointer;
+}
+.Edb:hover{
+    transform: scale(1.1);
+}
+
+
+.botonVolver{
+    width: 15rem;
+    height: 2rem;
+    background-color: #002d29;
+    color: #f4f4f4;
+    margin: 0.5rem auto;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 2px 2px #002d29;
+    cursor: pointer;
+}
+.botonVolver:hover{
+    transform: scale(1.1);
+}
+
+
+/* Estilos pagina editar_contactos */
+.botonGuardar, .botonBorrar, .botonCancelar{
+    width: 10rem;
+    height: 2rem;
+    background-color: #002d29;
+    color: #f4f4f4;
+    margin: 0.5rem auto;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 2px 2px #002d29;
+    cursor: pointer;
+}
+.botonGuardar:hover, .botonBorrar:hover, .botonCancelar:hover{
+    transform: scale(1.1);
+}
+

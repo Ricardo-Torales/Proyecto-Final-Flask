@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contactos{% endblock %}
+
+{% block content %}
+<body>
+    <section class="contenedor_hero">
+        <h1 class="crud">Dev</h1>
+        <h2>Administrador de Contactos</h2>
+    </section>
+    <section class="tabla">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Editar</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contacto in contactos %}
+                <tr>
+                    <td>{{ contacto.id }}</td>
+                    <td>{{ contacto.nombre }}</td>
+                    <td>{{ contacto.telefono }}</td>
+                    <td>{{ contacto.email }}</td>
+                    <td><a href="editar_contacto/{{ contacto.id }}"><button type="button" class="Edb">Editar</button></a></td>
+                    <td><a href="seleccionar_contacto/{{ contacto.id }}"><button type="button" class="Edb">Borrar</button></a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </section>
+<section>
+    <a href="{{ url_for('index') }}"><button type="button" class="botonVolver">Volver a la página de inicio</button></a>
+</section>
+<section>
+    <h5 class="final">¡SISTEMA CRUD FULLSTACK OESTE!</h5>
+</section>
+</body>
+{% endblock %}

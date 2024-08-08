@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}ACCESO DEV{% endblock %}
+
+{% block content %}
+
+<body>
+<header class="contenedor_hero">
+    <h1 class="titulo">Bienvenido Administrador</h1>
+    
+    </header>
+
+    <section class="contenedor_form">
+        <h2 class="contacto">¡ACCESO CON CREDENCIALES!</h2>
+        {% if error %}
+        <h2 class="error">{{ error }}</h2>
+        {% endif %}
+            <form action="/login" method="POST">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" require>
+    
+                <label for="contra">Contraseña:</label>
+                <input type="contra" id="contra" name="contra" require>
+    
+                <input type="submit" value="INGRESAR">
+            </form>
+
+    </section>
+    <section>
+        <h5 class="final">¡SISTEMA CRUD FULLSTACK OESTE!</h5>
+    </section>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            // Limpiar mensajes de error anteriores
+            document.getElementById('usuarioError').textContent = '';
+            document.getElementById('contraError').textContent = '';
+
+            // Validar usuario
+            var usuario = document.getElementById('usuario').value;
+            if (usuario.trim() === '') {
+                document.getElementById('usuarioError').textContent = 'El campo Usuario es obligatorio.';
+                event.preventDefault(); // Evitar el envío del formulario si hay errores
+            }
+
+            // Validar contraseña
+            var contra = document.getElementById('contra').value;
+            if (contra.trim() === '') {
+                document.getElementById('contraError').textContent = 'El campo Contraseña es obligatorio.';
+                event.preventDefault(); // Evitar el envío del formulario si hay errores
+            }
+        });
+    </script>
+</body>   
+
+{% endblock %}

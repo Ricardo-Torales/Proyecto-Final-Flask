@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contacto Borrado{% endblock %}
+
+{% block content %}
+
+<body>
+    <header class="contenedor_hero">
+        <h1 class="titulo">Contacto Borrado</h1>
+    </header>
+    <section>
+        <h2 class="confirmacion_borrar">¡El contacto se ha borrado con éxito!</h2>  
+    </section>
+    <section>
+        <a href="{{ url_for('contactos') }}"><button type="button" class="botonCancelar">Contactos</button></a>
+    </section>
+    <section>
+        <h5 class="final">¡SISTEMA CRUD FULLSTACK OESTE!</h5>
+    </section>
+</body>
+    
+{% endblock %}

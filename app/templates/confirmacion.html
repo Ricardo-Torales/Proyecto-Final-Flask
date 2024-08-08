@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %}BIENVENIDO{% endblock %}
+
+{% block content %}
+<body>
+<header class="contenedor_hero">
+    <h1 class="titulo">¡BIENVENIDO!</h1>
+    <p class="slogan">¡INSCRIPCIÓN REALIZADA CON ÉXITO!</p>
+    </header>
+    <section>
+    <h3 class="subtitulo">Nombre del evento: "Aprende <span class="span1">Marketing Digital"</span></h3>
+    <p>a realizarse los días: <span class="span2">19 al 22 de diciembre</span> en los siguiente horarios:</p>
+</section>
+<section>
+    <ul>
+        <li>20:00 PM - Argentina - Uruguay</li>
+        <li>19:00 PM - Chile</li>
+        <li>18:00 PM - Ecuador - Perú - Colombia</li>
+        <li>17:00 PM - México</li>
+    </ul>
+    </section>
+    <section class="contenedor_temas">
+        <p>Te invitamos a unirte al grupo exclusivo de WhastApp en donde Pasaremos los accesos a los talleres en su respectivo dia, media hora antes del inicio.</p>
+        <input type="submit" value="IR AL GRUPO">
+        <a href="{{ url_for('index') }}"><input type="submit" value="REGISTRAR A UN AMIGO"></a>
+
+    <section>
+    <div id="mensajeExitoo">
+        <h2 class="finall">Haz reservado tu lugar para nuestro evento exclusivo.</h2>
+    </div>
+    </section>
+</body>
+{% endblock %}

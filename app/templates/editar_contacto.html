@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}Editar Contacto{% endblock %}
+
+{% block content %}
+
+<body>
+    <header class="contenedor_hero">
+        <h1 class="titulo">Editar Contacto</h1>
+    </header>
+    <section>
+            <form method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="{{ contacto.nombre }}" required>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" value="{{ contacto.telefono }}" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="{{ contacto.email }}" required>
+        
+                <button type="submit" class="botonGuardar">Guardar Cambios</button>
+                <a href="{{ url_for('borrar_contacto', id=contacto.id) }}"><button type="button" class="botonBorrar">Borrar</button></a>
+                <a href="{{ url_for('contactos') }}"><button type="button" class="botonCancelar">Cancelar</button></a>
+            </form>  
+    </section>
+    <section>
+        <h5 class="final">¡SISTEMA CRUD FULLSTACK OESTE!</h5>
+    </section>
+</body>
+    
+   {% endblock %}
